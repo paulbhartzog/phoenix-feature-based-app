@@ -1,6 +1,6 @@
 # PhoenixFeatureBasedApp
 
-To start your Phoenix server:
+To start this Phoenix app:
 
   * Install dependencies with `mix deps.get`
   * Create and migrate your database with `mix ecto.setup`
@@ -10,7 +10,7 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 ## Tests
 
-For this app, the tests are in the same folders as the code
-so in order to run tests you have to run `mix test lib` to tell `mix test`
-what folder to run the tests against.
+For this app, the tests are in the same folders as the code.
+The `mix.exs` file has been setup to run these tests,
+so the file `test_helper.exs` must be in the `lib` folder.
 

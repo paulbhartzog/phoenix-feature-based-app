@@ -1,4 +1,4 @@
-defmodule PhoenixFeatureBasedAppWeb.ChannelCase do
+defmodule PhoenixFeatureBasedApp.ChannelCase do
   @moduledoc """
   This module defines the test case to be used by
   channel tests.
@@ -21,10 +21,10 @@ defmodule PhoenixFeatureBasedAppWeb.ChannelCase do
     quote do
       # Import conveniences for testing with channels
       import Phoenix.ChannelTest
-      import PhoenixFeatureBasedAppWeb.ChannelCase
+      # import PhoenixFeatureBasedAppWeb.ChannelCase
 
       # The default endpoint for testing
-      @endpoint PhoenixFeatureBasedAppWeb.Endpoint
+      @endpoint PhoenixFeatureBasedApp.Endpoint
     end
   end
 

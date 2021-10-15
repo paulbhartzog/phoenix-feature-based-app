@@ -23,7 +23,7 @@ defmodule PhoenixFeatureBasedApp.DataCase do
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
-      import PhoenixFeatureBasedApp.DataCase
+      # import PhoenixFeatureBasedApp.DataCase
     end
   end
 
