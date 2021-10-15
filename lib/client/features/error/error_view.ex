@@ -1,4 +1,4 @@
-defmodule PhoenixFeatureBasedAppWeb.ErrorView do
+defmodule PhoenixFeatureBasedApp.ErrorView do
   use PhoenixFeatureBasedAppWeb, :view
 
   # If you want to customize a particular status code

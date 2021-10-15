@@ -1,4 +1,4 @@
-defmodule PhoenixFeatureBasedAppWeb.ConnCase do
+defmodule PhoenixFeatureBasedApp.ConnCase do
   @moduledoc """
   This module defines the test case to be used by
   tests that require setting up a connection.
@@ -22,12 +22,10 @@ defmodule PhoenixFeatureBasedAppWeb.ConnCase do
       # Import conveniences for testing with connections
       import Plug.Conn
       import Phoenix.ConnTest
-      import PhoenixFeatureBasedAppWeb.ConnCase
-
       alias PhoenixFeatureBasedAppWeb.Router.Helpers, as: Routes
 
       # The default endpoint for testing
-      @endpoint PhoenixFeatureBasedAppWeb.Endpoint
+      @endpoint PhoenixFeatureBasedApp.Endpoint
     end
   end
 
