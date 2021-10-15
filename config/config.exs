@@ -11,9 +11,9 @@ config :phoenix_feature_based_app,
   ecto_repos: [PhoenixFeatureBasedApp.Repo]
 
 # Configures the endpoint
-config :phoenix_feature_based_app, PhoenixFeatureBasedAppWeb.Endpoint,
+config :phoenix_feature_based_app, PhoenixFeatureBasedApp.Endpoint,
   url: [host: "localhost"],
-  render_errors: [view: PhoenixFeatureBasedAppWeb.ErrorView, accepts: ~w(html json), layout: false],
+  render_errors: [view: PhoenixFeatureBasedApp.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: PhoenixFeatureBasedApp.PubSub,
   live_view: [signing_salt: "N93GH5Ml"]
 

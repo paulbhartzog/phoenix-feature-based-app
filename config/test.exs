@@ -15,7 +15,7 @@ config :phoenix_feature_based_app, PhoenixFeatureBasedApp.Repo,
 
 # We don't run a server during test. If one is required,
 # you can enable the server option below.
-config :phoenix_feature_based_app, PhoenixFeatureBasedAppWeb.Endpoint,
+config :phoenix_feature_based_app, PhoenixFeatureBasedApp.Endpoint,
   http: [ip: {127, 0, 0, 1}, port: 4002],
   secret_key_base: "AA9kunAEFjbBqHUudBzWi3G+WAxdNFvdbPIqmj/WpmhvMMUsG3UWqamuYsfVZEe5",
   server: false
