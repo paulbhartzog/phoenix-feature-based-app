@@ -1,4 +1,4 @@
-defmodule PhoenixFeatureBasedApp.Feature1Controller do
+defmodule PhoenixFeatureBasedApp.TagsController do
   use PhoenixFeatureBasedApp, :controller
 
   alias PhoenixFeatureBasedApp.Tags
@@ -10,17 +10,10 @@ defmodule PhoenixFeatureBasedApp.Feature1Controller do
   end
 
   def show(conn, _params) do
+    tags = Tags.list_tags()
     conn
     |> put_layout(false)
-    |> render("show.html")
-  end
-
-  def test(conn, _params) do
-    test = %{
-      test: "test"
-    }
-    json(conn, test)
-
+    |> render("show.html", tags: tags)
   end
 
   def tags(conn, _params) do
@@ -31,9 +24,6 @@ defmodule PhoenixFeatureBasedApp.Feature1Controller do
         json(conn, results)
     end
   end
-
-
-
 
 
 end

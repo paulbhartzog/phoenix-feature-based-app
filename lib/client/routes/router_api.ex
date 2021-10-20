@@ -11,15 +11,14 @@ defmodule PhoenixFeatureBasedApp.RouterAPI do
 #  scope "/api", PhoenixFeatureBasedAppAPI do
 #    pipe_through :api
 
-#    get "/feature1", Feature1Controller, :feature1_api
+#    get "/tags", TagsController, :tags_api
 #  end
 
 # protected API endpoints
 scope "/api/v1", PhoenixFeatureBasedApp, as: :api_v1 do
   pipe_through [:api]
 
-  get  "/feature1",                      Feature1Controller,         :test
-  get  "/tags",                          Feature1Controller,         :tags
+  get  "/tags",                          TagsController,         :tags
 end
 
 end

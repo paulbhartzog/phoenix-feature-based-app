@@ -11,7 +11,8 @@ defmodule PhoenixFeatureBasedApp.MixProject do
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
       deps: deps(),
-      test_paths: ["lib"]
+      test_paths: ["lib"], # directory from which to search for and run tests
+      test_pattern: "*.test.exs" #- a pattern to load test files. Defaults to *_test.exs
     ]
   end
 

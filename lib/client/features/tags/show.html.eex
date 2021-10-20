@@ -1,0 +1,11 @@
+<h2>Tags "Show""</h2>
+<p>
+  shows the tags in your db
+</p>
+<p>
+  <ul>
+    <%= for tag <- @tags do %>
+      <li><%= "#{tag.name}" %></li>
+   <% end %>
+  </ul>
+</p>

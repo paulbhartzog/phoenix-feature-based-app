@@ -9,10 +9,6 @@ defmodule PhoenixFeatureBasedApp.RouterWeb do
     plug :put_secure_browser_headers
   end
 
-  pipeline :api do
-    plug :accepts, ["json"]
-  end
-
   # Other scopes may use custom stacks.
   # scope "/api", PhoenixFeatureBasedAppWeb do
   #   pipe_through :api
@@ -55,7 +51,7 @@ defmodule PhoenixFeatureBasedApp.RouterWeb do
   end
 
   scope "/", PhoenixFeatureBasedApp do
-    resources "/feature1",                                   Feature1Controller
+    resources "/tags",                                   TagsController
   end
 
 end

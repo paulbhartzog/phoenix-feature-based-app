@@ -5,12 +5,24 @@
 <body>
   <h3>web endpoints</h3>
   <ul>
-    <li><a href="/feature1/">Feature 1</a></li>
-    <li><a href="/feature1/show">Feature 1 show</a></li>
-    <li><a href="/asdf">asdf (error)</a></li>
+    <li><a href="/tags/">Tags</a></li>
+    <li><a href="/tags/show">Tags "show"</a></li>
   </ul>
   <h3>api endpoints</h3>
   <ul>
-    <li>{{ HOST  }}api/v1/feature1</li>
     <li>{{ HOST  }}api/v1/tags</li>
+    <pre>
+    [
+      {
+        "name": "one"
+      },
+      {
+        "name": "two"
+      }
+    ]
+    </pre>
+    <p>
+      IF these tags are in your db
+    </p>
+  </ul>
 </body>
